@@ -1,0 +1,63 @@
+*{
+    font-size: 2rem;
+    color: aliceblue;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color: #000;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container > span{
+    animation: glow  2s  linear ;
+    
+    position: relative;
+}
+
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        background-color: blue;
+    }
+    
+   
+}
+
+span:first-child{
+    animation-delay:0s ;
+    animation-duration: .2s;
+}
+
+
+.container span:nth-child(2){
+    animation-delay: .2s;
+    
+}
+
+.container span:nth-child(3){
+    animation-delay: .4s;
+    
+    
+}
+
+.container span:nth-child(4){
+    animation-delay: .6s;
+}
+
+.container span:nth-child(5){
+    animation-delay: 8s;
+}
+
+.container span:last-child{
+    animation-delay:1s ;
+   
+}

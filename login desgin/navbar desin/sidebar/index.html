@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+          <div class="top">
+            <div class="logo">
+                <i class="fa-brands fa-pix"></i>
+                <span>pix-six</span>
+            </div>
+          
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href=""> 
+                 <i class="fa-solid fa-home"></i>  
+                 <span class="item">home</span> 
+                </a>
+                <!-- <span class="side-open">Home</span> -->
+            </li>
+            <li>
+                <a href=""> 
+                 <i class="fa-solid fa-user"></i>  
+                 <span class="item">customers</span> 
+                </a>
+                <!-- <span class="side-open">customers</span> -->
+            </li>
+            <li>
+                <a href=""> 
+                 <i class="fa-solid fa-cart-shopping"></i>  
+                 <span class="item">shopping</span> 
+                </a>
+                <!-- <span class="side-open">shopping</span> -->
+            </li>
+            <li>
+                <a href=""> 
+                 <i class="fa-solid fa-gear"></i>  
+                 <span class="item">settings</span> 
+                </a>
+                <!-- <span class="side-open">settings</span> -->
+            </li>
+            <li>
+                <a href=""> 
+                 <i class="fa-solid fa-right-from-bracket"></i>  
+                 <span class="item">logout</span> 
+                </a>
+                <!-- <span class="side-open">logout</span> -->
+            </li>
+        </ul>
+   
+    </div>
+    <script>
+        let btn =document.querySelector('#btn');
+        let sidebar = document.querySelector(".sidebar");
+        btn.onclick = function (){
+            sidebar.classList.toggle('active')};
+    </script>
+</body>
+
+
+
+
+
+
+
+</html>

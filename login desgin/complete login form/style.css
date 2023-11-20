@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1F2833;
+    
+}
+.container{
+    height: 650px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 4px 4px orange;
+    
+    
+
+   
+}
+.left{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+
+}
+p{
+    color: #fff;
+    position: relative;
+    bottom: 45px;
+    font-size: 40px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.form{
+    position: relative;
+    box-sizing: border-box;
+}
+.form input{
+    height: 60px;
+    width: 360px;
+    /* padding-left: 20px; */
+    padding-right: 55px;
+   
+   
+    outline: none;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    /* border: 2px solid yellowgreen; */
+    color: #fff;
+    /* border-radius: 40px; */
+    
+
+}
+.form input:focus{
+    border-bottom: 2px solid yellowgreen;
+}
+.form label{
+    position: absolute;
+    /* left: 30px; */
+    /* top: 18px; */
+    left: 0px;
+    color: #fff;
+    /* padding: 0 9px; */
+    top: 20px;
+    font-size: 18px;
+    transition: .5s;
+}
+.form input:focus~label,
+.form input:valid~label{
+    top: -10px;
+    background-color: #1F2833;
+}
+
+.form i{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    right: 20px;
+    top: 15px;
+
+}
+button{
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 60%;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    background-color: yellowgreen;
+    color: #fff;
+    font-weight: 400;
+}
+.social-icon{
+    margin-top: 20px;
+}
+.social-icon span{
+    font-size: 38px;
+    padding-left: 40px;
+    color: white;
+    transition: .3s;
+}
+.fa-youtube:hover{
+    color: red;
+}
+.fa-facebook:hover{
+    color: #1877F2;
+}
+.fa-github:hover{
+    color: #4078c0	;
+}
+
+span{
+    color: #fff;
+    text-transform: capitalize;
+}
+span a{
+    color: #fff;
+    text-decoration: none;
+}
+span a:hover{
+    text-decoration: underline;
+}
+span a:active{color: red;}

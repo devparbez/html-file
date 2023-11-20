@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <i class="fa-solid fa-bars" id="btn"></i>
+        <a href="" class="logo-1">logo</a>
+        <nav>
+            <a href="">home</a>
+            <a href="">contact</a>
+            <a href="">service</a>
+            <a href="">company</a>
+            <a href="">about</a>
+        </nav>
+        
+    
+</header>
+
+<div class="sidebar">
+    <div class="top">
+      <!-- <i class="fa-solid fa-bars" id="btn"></i> -->
+      <div class="logo">
+          <a href="">
+             <i class="fa-brands fa-pix"></i>
+              <span>pis-six</span>
+          </a>
+      </div>
+      
+      
+     </div>
+      <ul class="links">
+          <h1>main menu</h1>
+          <li>
+              <span class="fa-solid fa-house"></span>
+              <a href="">home</a>
+              <span class="side-show">home</span>
+          </li>
+          <li>
+              <span class="fa-solid fa-user"></span>
+              <a href="">profile</a>
+              <span class="side-show">profile</span>
+          </li>
+          <li>
+              <span class="fa-solid fa-wallet"></span>
+              <a href="">wallet</a>
+              <span class="side-show">wallet</span>
+          </li>
+          <hr>
+          <h1>shopping items</h1>
+          <li>
+              <span class="fa-solid fa-shopping-cart"></span>
+              <a href="">shopping</a>
+              <span class="side-show">shopping</span>
+          </li>
+          <li>
+              <span class="fa-solid fa-credit-card"></span>
+              <a href="">cards</a>
+              <span class="side-show">cards</span>
+          </li>
+          <li>
+              <span class="fa-solid fa-gift"></span>
+              <a href="">gift-cards</a>
+              <span class="side-show">gift</span>
+          </li>
+          <hr>
+          <h1>advanced</h1>
+          <li>
+              <span class="fa-solid fa-gear"></span>
+              <a href="">settings</a>
+              <span class="side-show">settings</span>
+          </li> <li>
+              <span class="fa-solid fa-right-from-bracket"></span>
+              <a href="">logout</a>
+              <span class="side-show">logout</span>
+          </li>
+      </ul>
+      
+  </div>
+  <script>
+      let btn = document.querySelector('#btn');
+      let sidebar = document.querySelector(".sidebar");
+      btn.onclick = function (){
+          sidebar.classList.toggle('active')};
+  </script>
+</body>
+</html>
