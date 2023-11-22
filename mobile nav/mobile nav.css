@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    color: aliceblue;
+}
+body{
+    min-height: 100vh;
+    background: #071d2b;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 5%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.fa-bars{
+    display: none;
+}
+
+.fa-xmark{
+    color: red;
+}
+
+nav i{
+    
+}
+
+@media screen and (max-width: 768px){
+   .fa-bars{
+    display: block;
+   }
+   ul{
+    display: none;
+   }
+}
